@@ -1,0 +1,43 @@
+---
+version: 1
+rwmutex: {}
+interactions:
+- request:
+    body: ""
+    form: {}
+    headers:
+      User-Agent:
+      - go-chucknorris/0.1.0
+    url: https://api.chucknorris.io/jokes/search?query=Chuck+Norris+once+interrogated+agent+Smith.
+    method: GET
+  response:
+    body: '{"total":1,"result":[{"category":null,"icon_url":"https:\/\/assets.chucknorris.host\/img\/avatar\/chuck-norris.png","id":"nj19y6OkQSu7n0tYiPn4FA","url":"http:\/\/api.chucknorris.io\/jokes\/nj19y6OkQSu7n0tYiPn4FA","value":"Chuck
+      Norris once interrogated agent Smith."}]}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - "true"
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, HEAD
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Cf-Ray:
+      - 3393a5a2feae273e-FRA
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 02 Mar 2017 10:24:34 GMT
+      Server:
+      - cloudflare-nginx
+      Set-Cookie:
+      - __cfduid=dcb90f468ae57451022ad95854970dd841488450273; expires=Fri, 02-Mar-18
+        10:24:33 GMT; path=/; domain=.chucknorris.io; HttpOnly
+      Via:
+      - 1.1 vegur
+      X-Result-Count:
+      - "1"
+    status: 200 OK
+    code: 200
