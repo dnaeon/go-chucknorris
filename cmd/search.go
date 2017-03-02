@@ -32,6 +32,7 @@ import (
 	"github.com/urfave/cli"
 )
 
+// NewSearchCommand creates a new command for searching jokes.
 func NewSearchCommand() cli.Command {
 	cmd := cli.Command{
 		Name:   "search",

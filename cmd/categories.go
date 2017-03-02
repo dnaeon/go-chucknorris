@@ -32,7 +32,7 @@ import (
 	"github.com/urfave/cli"
 )
 
-// NewCategoriesCmd creates a new command for retrieving the
+// NewCategoriesCommand creates a new command for retrieving the
 // Chuck Norris jokes category list.
 func NewCategoriesCommand() cli.Command {
 	cmd := cli.Command{
