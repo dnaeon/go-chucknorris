@@ -11,13 +11,13 @@ Chuck Norris facts at https://api.chucknorris.io/.
 
 Install go-chucknorris using `go get`.
 
-```bash
+```
 $ go get -v github.com/dnaeon/go-chucknorris
 ```
 
 Or by cloning the repo and using `make(1)`.
 
-```bash
+```
 $ git clone https://github.com/dnaeon/go-chucknorris
 $ cd go-chucknorris && make install
 ```
@@ -26,20 +26,20 @@ $ cd go-chucknorris && make install
 
 Example usage of retrieving a random joke.
 
-```bash
-go-chucknorris joke
+```
+$ go-chucknorris joke
 If Chuck Norris wants your opinion, he'll beat it into you.
 ```
 
 Listing all joke categories.
 
-```bash
+```
 $ go-chucknorris categories
 ```
 
 Searching for jokes.
 
-```bash
+```
 $ go-chucknorris search --query "agent smith"
 Found 1 joke(s) matching the given query.
 
