@@ -11,7 +11,7 @@ import (
 func NewJokeCommand() cli.Command {
 	cmd := cli.Command{
 		Name:   "joke",
-		Usage:  "tells a Chuck Norris joke",
+		Usage:  "get a random joke or from given category",
 		Action: execJokeCommand,
 		Flags: []cli.Flag{
 			cli.StringFlag{

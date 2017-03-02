@@ -12,7 +12,7 @@ import (
 func NewCategoriesCommand() cli.Command {
 	cmd := cli.Command{
 		Name:   "categories",
-		Usage:  "shows the list of joke categories",
+		Usage:  "show the list of joke categories",
 		Action: execCategoriesCommand,
 	}
 

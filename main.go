@@ -16,6 +16,7 @@ func main() {
 	app.Commands = []cli.Command{
 		cmd.NewCategoriesCommand(),
 		cmd.NewJokeCommand(),
+		cmd.NewSearchCommand(),
 	}
 
 	app.Run(os.Args)
