@@ -21,7 +21,7 @@ func NewCategoriesCommand() cli.Command {
 
 func execCategoriesCommand(c *cli.Context) error {
 	client := api.NewClient(nil)
-	categories, _, err := client.Categories()
+	categories, err := client.Categories()
 
 	if err != nil {
 		return cli.NewExitError(err.Error(), 1)

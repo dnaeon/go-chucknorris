@@ -27,7 +27,7 @@ func NewJokeCommand() cli.Command {
 func execJokeCommand(c *cli.Context) error {
 	client := api.NewClient(nil)
 	category := api.Category(c.String("category"))
-	joke, _, err := client.RandomJoke(category)
+	joke, err := client.RandomJoke(category)
 	if err != nil {
 		return cli.NewExitError(err.Error(), 1)
 	}
