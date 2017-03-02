@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/dnaeon/gru/version"
+	"github.com/dnaeon/go-chucknorris/version"
 )
 
 const (

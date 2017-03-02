@@ -35,7 +35,7 @@ func execSearchCommand(c *cli.Context) error {
 		return cli.NewExitError(err.Error(), 1)
 	}
 
-	fmt.Printf("Found %d jokes matching the given query.\n", result.Total)
+	fmt.Printf("Found %d joke(s) matching the given query.\n", result.Total)
 	for _, joke := range result.Result {
 		fmt.Printf("\n%s\n", joke.Value)
 	}
